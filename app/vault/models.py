@@ -3,17 +3,6 @@ import random
 
 def pass_gen():
     return ''.join(chr(random.randint(33,126)) for num in range(random.randint(8, 20)))
-    """password = ''
-    def rand_uni():
-        return random.randint(33, 126)
-    def rand():
-        return random.randint(8, 20)
-    code = rand()
-    for num in range(code):
-        r_int = chr(rand_uni())
-        password += r_int
-    return password"""
-
 
 # Create your models here.
 class User(models.Model):
